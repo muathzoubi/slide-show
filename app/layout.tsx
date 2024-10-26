@@ -2,9 +2,9 @@ import './globals.css';
 
 
 export const metadata = {
-  title: 'Next.js App Router + NextAuth + Tailwind CSS',
+  title: 'منظومة تقدير  ',
   description:
-    'A user admin dashboard configured with Next.js, Postgres, NextAuth, Tailwind CSS, TypeScript, and Prettier.'
+    'تقدير هي منظومة متكاملة لإدارة وتشغيل وتنظيم عمليات تقييم أضرار المركبات بشكل الكتروني وبمهنية واحترافية عالية، وفق افضل المعايير والمقاييس العالمية ، وتعمل منظومة تقدير على حكومة الإجراءات والارتباط التقني مع كافة الاطراف المعنية بتقييم أضرار المركبات'
 };
 
 export default function RootLayout({

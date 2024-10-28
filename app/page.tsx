@@ -3,6 +3,7 @@ import { Menu, Search, User } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { FullPageSlideshow } from "@/components/ui/full-page-slideshow"
+import Link from "next/link"
 const data=[
   {
     title:"افتتاح أول مركز تقدير أضرار المركبات في مكة المكرمة",

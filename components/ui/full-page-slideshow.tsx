@@ -59,9 +59,10 @@ export function FullPageSlideshow() {
             <div className="text-center text-white max-w-4xl px-4">
               <h2 className="text-4xl md:text-6xl font-bold mb-4">{slide.title}</h2>
               <p className="text-xl md:text-2xl">{slide.description}</p>
-            <Link href="https://protection-three.vercel.app/data" className="my-6" > <Button>قدم طلبك</Button></Link>
+              <div>
+            <Link href="https://protection-three.vercel.app/data" className="h-12 p-5" > <Button>قدم طلبك</Button></Link>
 
-            </div>
+            </div></div>
             <div>
 
             </div>

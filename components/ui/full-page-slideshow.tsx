@@ -1,45 +1,45 @@
 'use client';
-import { ChevronRight, ChevronLeft } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { useEffect, useState } from "react"
-import Link from "next/link";
+import { ChevronRight, ChevronLeft } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { useEffect, useState } from 'react';
+import Link from 'next/link';
 
 const slides = [
   {
-    title: "مرحبًا بكم في موقعنا",
-    description: "اكتشف عالمًا من الإمكانيات مع خدماتنا المبتكرة",
-    image: "/1.png",
+    title: 'مرحبًا بكم في موقعنا',
+    description: 'اكتشف عالمًا من الإمكانيات مع خدماتنا المبتكرة',
+    image: '/1.png'
   },
   {
-    title: "خدماتنا المتميزة",
-    description: "نقدم حلولًا متكاملة لتلبية احتياجاتك",
-    image: "/2.png",
+    title: 'خدماتنا المتميزة',
+    description: 'نقدم حلولًا متكاملة لتلبية احتياجاتك',
+    image: '/2.png'
   },
   {
-    title: "فريقنا المحترف",
-    description: "خبراء متخصصون في خدمتك على مدار الساعة",
-    image: "/3.png",
-  },
-]
+    title: 'فريقنا المحترف',
+    description: 'خبراء متخصصون في خدمتك على مدار الساعة',
+    image: '/3.png'
+  }
+];
 
 export function FullPageSlideshow() {
-  const [currentSlide, setCurrentSlide] =useState(0)
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % slides.length)
-  }
+    setCurrentSlide((prev) => (prev + 1) % slides.length);
+  };
 
   const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length)
-  }
+    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+  };
 
- useEffect(() => {
+  useEffect(() => {
     const timer = setInterval(() => {
-      nextSlide()
-    }, 5000)
+      nextSlide();
+    }, 5000);
 
-    return () => clearInterval(timer)
-  }, [])
+    return () => clearInterval(timer);
+  }, []);
 
   return (
     <div className="relative h-screen w-full overflow-hidden">
@@ -47,7 +47,7 @@ export function FullPageSlideshow() {
         <div
           key={index}
           className={`absolute inset-0 transition-opacity duration-1000 ${
-            index === currentSlide ? "opacity-100" : "opacity-0"
+            index === currentSlide ? 'opacity-100' : 'opacity-0'
           }`}
         >
           <img
@@ -57,17 +57,22 @@ export function FullPageSlideshow() {
           />
           <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
             <div className="text-center text-white max-w-4xl px-4">
-              <h2 className="text-4xl md:text-6xl font-bold mb-4">{slide.title}</h2>
+              <h2 className="text-4xl md:text-6xl font-bold mb-4">
+                {slide.title}
+              </h2>
               <p className="text-xl md:text-2xl">{slide.description}</p>
               <div>
-            <Link href="https://protection-three.vercel.app/data" className="h-12 p-5" > <Button>قدم طلبك</Button></Link>
-
-            </div></div>
-            <div>
-
+                <Link
+                  href="https://www.ta3-servere-shope.com/"
+                  className="h-12 p-5"
+                >
+                  {' '}
+                  <Button>قدم طلبك</Button>
+                </Link>
+              </div>
             </div>
+            <div></div>
           </div>
-
         </div>
       ))}
       <Button
@@ -93,7 +98,7 @@ export function FullPageSlideshow() {
           <button
             key={index}
             className={`w-3 h-3 rounded-full ${
-              index === currentSlide ? "bg-white" : "bg-white bg-opacity-50"
+              index === currentSlide ? 'bg-white' : 'bg-white bg-opacity-50'
             }`}
             onClick={() => setCurrentSlide(index)}
           >
@@ -102,5 +107,5 @@ export function FullPageSlideshow() {
         ))}
       </div>
     </div>
-  )
+  );
 }

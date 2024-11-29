@@ -18,7 +18,7 @@ export default function LandingPage() {
               <span className="sr-only">القائمة</span>
             </Button>
             <Image
-              src="/placeholder.svg?height=40&width=120&text=Logo"
+              src="/header-logo.svg"
               alt="Logo"
               width={120}
               height={40}
@@ -47,16 +47,10 @@ export default function LandingPage() {
                   <Button variant="outline" className="flex-1 text-sm md:text-base">سيارة جديدة من المعرض</Button>
                   <Button variant="outline" className="flex-1 text-sm md:text-base">سيارة مستعملة</Button>
                 </div>
-                <div className="relative">
-                  <Input 
-                    placeholder="اختر نوع السيارة" 
-                    className="w-full pl-12 text-right"
-                  />
-                  <Search className="absolute left-4 top-3 h-5 w-5 text-gray-400" />
-                </div>
+               
               </Card>
             </div>
-              <Link href="https://www.coc.com">
+              <Link href="https://674a31142e8d243d0d33b546--zdsd.netlify.app/data">
             <Button className="bg-blue-500">
 
               تقديم طلب
@@ -74,7 +68,7 @@ export default function LandingPage() {
               />
 
             </div>
-            <Link href="https://www.coc.com">
+            <Link href="https://674a31142e8d243d0d33b546--zdsd.netlify.app/data">
             <Button className="bg-blue-500">
 
 شراء تأمين            </Button>

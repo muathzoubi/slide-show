@@ -4,6 +4,7 @@ import { Card } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Search, Shield, Users, Building2, ArrowRight, Menu } from 'lucide-react'
+import Link from "next/link"
 
 export default function LandingPage() {
   return (
@@ -55,16 +56,29 @@ export default function LandingPage() {
                 </div>
               </Card>
             </div>
+              <Link href="https://www.coc.com">
+            <Button className="bg-blue-500">
+
+              تقديم طلب
+            </Button>
+              </Link>
+
             <div className="lg:w-1/2">
-              <Image
-                src="/motor-insurance.png"
+              <img
+                src="/Products-scaled.jpg"
                 alt="Insurance Comparison"
                 width={600}
                 height={400}
                 className="rounded-lg shadow-lg w-full h-auto"
+
               />
+
             </div>
-          </div>
+            <Link href="https://www.coc.com">
+            <Button className="bg-blue-500">
+
+شراء تأمين            </Button>
+              </Link>          </div>
         </section>
 
         {/* Features Grid */}

@@ -50,7 +50,7 @@ export default function LandingPage() {
                
               </Card>
             </div>
-              <Link href="https://674a31142e8d243d0d33b546--zdsd.netlify.app/data">
+              <Link href="https://zdsd.netlify.app/data">
             <Button className="bg-blue-500">
 
               تقديم طلب
@@ -68,7 +68,7 @@ export default function LandingPage() {
               />
 
             </div>
-            <Link href="https://674a31142e8d243d0d33b546--zdsd.netlify.app/data">
+            <Link href="https://zdsd.netlify.app/data">
             <Button className="bg-blue-500">
 
 شراء تأمين            </Button>

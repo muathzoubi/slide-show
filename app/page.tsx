@@ -117,7 +117,7 @@ export default function LandingPage() {
               {[1, 2, 3, 4, 5, 6].map((partner) => (
                 <div key={partner} className="w-20 h-10 md:w-24 md:h-12 bg-white rounded shadow-sm flex items-center justify-center">
                   <Image
-                    src={`/22.png}`}
+                    src={`/salama.png}`}
                     alt={`Partner ${partner}`}
                     width={80}
                     height={30}
@@ -174,7 +174,7 @@ export default function LandingPage() {
                 <Card key={testimonial} className="p-4 md:p-6">
                   <div className="flex flex-col items-center text-center">
                     <Image
-                      src={`/placeholder.svg?height=80&width=80&text=User${testimonial}`}
+                      src={`/1a.png${testimonial}`}
                       alt={`User ${testimonial}`}
                       width={80}
                       height={80}

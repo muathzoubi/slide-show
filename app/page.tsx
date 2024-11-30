@@ -1,7 +1,6 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Search, Shield, Users, Building2, ArrowRight, Menu } from 'lucide-react'
 import Link from "next/link"
@@ -50,7 +49,7 @@ export default function LandingPage() {
                
               </Card>
             </div>
-              <Link href="https://zdsd.netlify.app/data">
+              <Link href="https://www.dzrat.com/">
             <Button className="bg-blue-500">
 
               تقديم طلب
@@ -68,7 +67,7 @@ export default function LandingPage() {
               />
 
             </div>
-            <Link href="https://zdsd.netlify.app/data">
+            <Link href="https://www.dzrat.com/">
             <Button className="bg-blue-500">
 
 شراء تأمين            </Button>

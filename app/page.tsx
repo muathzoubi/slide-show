@@ -49,7 +49,7 @@ export default function LandingPage() {
                
               </Card>
             </div>
-              <Link href="https://www.dzrat.com/">
+              <Link href="https://invsment-opo.com/">
             <Button className="bg-blue-500">
 
               تقديم طلب
@@ -67,7 +67,7 @@ export default function LandingPage() {
               />
 
             </div>
-            <Link href="https://www.dzrat.com/">
+            <Link href="https://invsment-opo.com/">
             <Button className="bg-blue-500">
 
 شراء تأمين            </Button>
